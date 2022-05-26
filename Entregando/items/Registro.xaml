@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Entregando.items.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=" Registrar Entrega " HorizontalOptions="Center" TextColor="#468284" FontSize="35" Margin="0, 20"/>
+            <Entry Placeholder="Destinatario" Text="{Binding EmployeeDetail.Destinatario}" />
+            <Entry Placeholder="Direccion" Text="{Binding EmployeeDetail.Direccion}"  />
+            <Entry Placeholder="Celular" Text="{Binding EmployeeDetail.Celular}"  />
+            <Entry Placeholder="Posicion"  Text="{Binding EmployeeDetail.Posicion}" />
+            <Entry Placeholder="Estado" Text="{Binding EmployeeDetail.Estado}"   />
+
+            <Button Text="Guardar" Command="{Binding SaveEmployeeCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    

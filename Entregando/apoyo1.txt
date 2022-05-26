@@ -1,0 +1,41 @@
+paquetes
+
+- firebase auth 119.3.1
+-firebase core 117.4.1
+xamarin forms 4.7.0.1142
+
+usamos el x:name 
+emailInput ---- 
+passwordimput---
+y los button clicked
+de los botones como
+SingUpclicked
+
+loggedpage es la direccion de inicio
+
+
+            auth = DependencyService.Get<IAuth>();
+            if (auth.IsSigIn())
+            {
+                MainPage = new menu();
+            }
+            else
+            {
+                MainPage = new MainPage();
+            }
+
+            MainPage = new MainPage();
+        }
+
+  <Entry x:Name="txtEmail" Placeholder="Correo Electronico." Keyboard="Email" />
+        <Entry x:Name="txtContra" Placeholder="Contraseña" IsPassword="True"/>
+        <Button x:Name="btnLogin" Text=" INGRESAR AL SISTEMA" TextColor="#468284" HorizontalOptions="Center" BackgroundColor="AntiqueWhite" Clicked="btnLogin_Clicked"/>
+        <Button x:Name="btnRegistro" 
+
+Label Text=" Registrarse en el Sistema " HorizontalOptions="Center" TextColor="#468284" FontSize="35" Margin="0, 20"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre y Apellido" />
+            <Entry x:Name="txtEmail" Placeholder="Correo Electronico" Keyboard="Email" />
+            <Entry x:Name="txtCelular" Placeholder="Celular / telefono" Keyboard="Numeric"/>
+            <Entry x:Name="txtCiudad" Placeholder="Ciudad" />
+            <Entry x:Name="txtContra" Placeholder="Contraseña" IsPassword="True"/>
+            <Button x:Name="btnRegistro" Text=" Registrarme" Margin="60,4

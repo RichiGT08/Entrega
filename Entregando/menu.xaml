@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:locals="clr-namespace:Entregando.items"
+             x:Class="Entregando.menu"
+            BarTextColor="#e8e8e8" BarBackgroundColor="#191919" >
+  <!--Pages can be added as references or inline-->
+    <locals:home Title="Inicio" IconImageSource="inicio.png"/>
+    <locals:Registro Title="Registrar" IconImageSource="anadir.png"/>
+    <locals:Lista Title="Lista" IconImageSource="carpeta.png"/>
+    <locals:ajustes Title="Ajustes" IconImageSource="configuracion.png"/>
+
+
+</TabbedPage>
